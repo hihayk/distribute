@@ -13,7 +13,7 @@
   <body>
 
     <div class="demo-container">
-      <div class="dst dst-space-1">
+      <div id="dst" class="dst dst-space-1">
         <div class="demo-box demo-box-lg"></div>
         <div class="demo-box demo-box-md"></div>
         <div class="demo-box"></div>
@@ -21,7 +21,7 @@
 
       <div class="title-section">
         <h1 class="main-title">Distribute</h1>
-        <h2 class="main-subtitle">Layout component</h2>
+        <h2 class="main-subtitle">Single element layout component</h2>
       </div>
 
       <div class="triggers-section">
@@ -84,7 +84,10 @@
       $( '.js-dst-space .trigger-input' )
       .keyup(function() {
         var value = $( this ).val();
-        $( ".dst" ).addClass( 'dst-space-' + value );
+        $( "#dst" ).removeClass(
+          'dst-space-1 dst-space-2 dst-space-3 dst-space-4 dst-space-5 dst-space-6 dst-space-7 dst-space-8'
+        );
+        $( "#dst" ).addClass( 'dst-space-' + value );
       })
       .keyup();
     </script>
