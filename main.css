@@ -26,6 +26,20 @@ body {
   height: 128px;
 }
 
+@media (max-width: 728px) {
+  .demo-box {
+	  opacity: .3;
+	  height: 16px;
+	  width: 64px;
+	}
+	.demo-box-md {
+	  height: 32px;
+	}
+	.demo-box-lg {
+	  height: 64px;
+	}
+}
+
 .demo-container {
 	height: 100vh;
 	display: flex;
@@ -41,10 +55,22 @@ body {
 	left: 64px;
 }
 
+@media (max-width: 728px) {
+	.triggers-section {
+		left: 24px;
+	}
+}
+
 .title-section {
 	position: absolute;
 	left: 64px;
 	top: 45px;
+}
+
+@media (max-width: 728px) {
+	.title-section {
+		left: 24px;
+	}
 }
 
 .triggers-group {
