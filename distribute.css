@@ -2,7 +2,7 @@
 .dst-vertical { flex-direction: column }
 .dst-inline { display: inline-flex }
 
-.dst-top { align-items: top }
+.dst-start { align-items: flex-start }
 .dst-center { align-items: center }
 .dst-end { align-items: flex-end }
 
