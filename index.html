@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Distribute</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="distribute.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="demo-container">
+      <div class="dst dst-space-1">
+        <div class="demo-box demo-box-lg"></div>
+        <div class="demo-box demo-box-md"></div>
+        <div class="demo-box"></div>
+      </div>
+
+      <div class="title-section">
+        <h1 class="main-title">Distribute</h1>
+        <h2 class="main-subtitle">Layout component</h2>
+      </div>
+
+      <div class="triggers-section">
+        
+        <div class="triggers-group triggers-radio">
+          <div class="trigger active">.dst</div>
+          
+          <div class="trigger js-dst-space active">
+            <div class="trigger-input-group">
+              <div class="trigger-input-label">.dst-space-</div>
+              <input type="number" class="trigger-input" value="1" min="1" max="8">
+            </div>
+          </div>
+        </div>
+
+        <div class="triggers-group triggers-radio">
+          <div class="trigger js-dst-start active">.dst-start</div>
+          <div class="trigger js-dst-center">.dst-center</div>
+          <div class="trigger js-dst-end">.dst-end</div>
+        </div>
+
+        <div class="triggers-group triggers-radio">
+          <div class="trigger js-dst-vertical">.dst-vertical</div>
+          <div class="trigger">.dst-inline</div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      $( ".js-dst-end" ).click(function() {
+        $( '.dst' ).addClass( "dst-end" );
+        $( '.dst' ).removeClass( "dst-center" );
+        $( '.dst' ).removeClass( "dst-start" );
+        $( this ).parent('.triggers-group').find('.trigger').removeClass( "active" );
+        $( this ).addClass( "active" );
+      });
+      $( ".js-dst-center" ).click(function() {
+        $( '.dst' ).addClass( "dst-center" );
+        $( '.dst' ).removeClass( "dst-end" );
+        $( '.dst' ).removeClass( "dst-start" );
+        $( this ).parent('.triggers-group').find('.trigger').removeClass( "active" );
+        $( this ).addClass( "active" );
+      });
+      $( ".js-dst-start" ).click(function() {
+        $( '.dst' ).addClass( "dst-start" );
+        $( '.dst' ).removeClass( "dst-end" );
+        $( '.dst' ).removeClass( "dst-center" );
+        $( this ).parent('.triggers-group').find('.trigger').removeClass( "active" );
+        $( this ).addClass( "active" );
+      });
+
+      $( ".js-dst-vertical" ).click(function() {
+        $( '.dst' ).toggleClass( "dst-vertical" );
+        $( this ).toggleClass( "active" );
+      });
+
+      $( '.js-dst-space .trigger-input' )
+      .keyup(function() {
+        var value = $( this ).val();
+        $( ".dst" ).addClass( 'dst-space-' + value );
+      })
+      .keyup();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,105 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #212121;
+	color: white;
+	font-family: 'Space Mono', monospace;
+	font-size: 16px;
+	line-height: 24px;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.demo-box {
+  border-radius: 2px;
+  background-color: white;
+  height: 32px;
+  width: 128px;
+}
+.demo-box-md {
+  height: 64px;
+}
+.demo-box-lg {
+  height: 128px;
+}
+
+.demo-container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('images/grid.png');
+	background-position: center;
+	position: relative;
+}
+
+.triggers-section {
+	position: absolute;
+	left: 64px;
+}
+
+.title-section {
+	position: absolute;
+	left: 64px;
+	top: 45px;
+}
+
+.triggers-group {
+	margin-bottom: 24px;
+}
+
+.trigger {
+	opacity: .5;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.trigger.active {
+	opacity: 1;
+}
+
+.trigger-input-group {
+	display: flex;
+}
+
+.trigger-input {
+	padding: 0;
+	border: 0;
+	-webkit-appearance: none;
+	-mox-appearance: none;
+	appearance: none;
+	font-family: inherit;
+	line-height: inherit;
+	background-color: transparent;
+	color: inherit;
+}
+.trigger-input::-webkit-inner-spin-button, 
+.trigger-input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+.trigger-input:focus {
+	outline: 0;
+	color: blue;
+}
+
+.red {
+	border: 1px solid red;
+}
+
+.main-title {
+	font: inherit;
+	margin: 0;
+}
+
+.main-subtitle {
+	font: inherit;
+	margin: 0;
+	opacity: .5;
+}
