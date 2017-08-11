@@ -1,52 +1,27 @@
 .dst { display: flex }
-.dst-vertical { flex-direction: column }
 .dst-inline { display: inline-flex }
-
+.dst-vertical { flex-direction: column }
 .dst-start { align-items: flex-start }
 .dst-center { align-items: center }
 .dst-end { align-items: flex-end }
 
-.dst-space-1 > *:not(:last-child) { margin-right: 8px }
-.dst-space-2 > *:not(:last-child) { margin-right: 16px }
-.dst-space-3 > *:not(:last-child) { margin-right: 24px }
-.dst-space-4 > *:not(:last-child) { margin-right: 32px }
-.dst-space-5 > *:not(:last-child) { margin-right: 40px }
-.dst-space-6 > *:not(:last-child) { margin-right: 48px }
-.dst-space-7 > *:not(:last-child) { margin-right: 56px }
-.dst-space-8 > *:not(:last-child) { margin-right: 64px }
+.dst-space-1:not(.dst-vertical) > *:not(:last-child) { margin-right: 8px }
+.dst-space-2:not(.dst-vertical) > *:not(:last-child) { margin-right: 16px }
+.dst-space-3:not(.dst-vertical) > *:not(:last-child) { margin-right: 24px }
+.dst-space-4:not(.dst-vertical) > *:not(:last-child) { margin-right: 32px }
+.dst-space-5:not(.dst-vertical) > *:not(:last-child) { margin-right: 40px }
+.dst-space-6:not(.dst-vertical) > *:not(:last-child) { margin-right: 48px }
+.dst-space-7:not(.dst-vertical) > *:not(:last-child) { margin-right: 56px }
+.dst-space-8:not(.dst-vertical) > *:not(:last-child) { margin-right: 64px }
 
-.dst-space-1.dst-vertical > *:not(:last-child) { 
-  margin-bottom: 8px; 
-  margin-right: inherit; 
-}
-.dst-space-2.dst-vertical > *:not(:last-child) { 
-  margin-bottom: 16px; 
-  margin-right: inherit; 
-}
-.dst-space-3.dst-vertical > *:not(:last-child) { 
-  margin-bottom: 24px; 
-  margin-right: inherit; 
-}
-.dst-space-4.dst-vertical > *:not(:last-child) { 
-  margin-bottom: 32px; 
-  margin-right: inherit; 
-}
-.dst-space-5.dst-vertical > *:not(:last-child) { 
-  margin-bottom: 40px; 
-  margin-right: inherit; 
-}
-.dst-space-6.dst-vertical > *:not(:last-child) { 
-  margin-bottom: 48px; 
-  margin-right: inherit; 
-}
-.dst-space-7.dst-vertical > *:not(:last-child) { 
-  margin-bottom: 56px; 
-  margin-right: inherit; 
-}
-.dst-space-8.dst-vertical > *:not(:last-child) { 
-  margin-bottom: 64px; 
-  margin-right: inherit; 
-}
+.dst-space-1.dst-vertical > *:not(:last-child) { margin-bottom: 8px }
+.dst-space-2.dst-vertical > *:not(:last-child) { margin-bottom: 16px }
+.dst-space-3.dst-vertical > *:not(:last-child) { margin-bottom: 24px }
+.dst-space-4.dst-vertical > *:not(:last-child) { margin-bottom: 32px }
+.dst-space-5.dst-vertical > *:not(:last-child) { margin-bottom: 40px }
+.dst-space-6.dst-vertical > *:not(:last-child) { margin-bottom: 48px }
+.dst-space-7.dst-vertical > *:not(:last-child) { margin-bottom: 56px }
+.dst-space-8.dst-vertical > *:not(:last-child) { margin-bottom: 64px }
 
 .dst-top-1 { padding-top: 8px }
 .dst-top-2 { padding-top: 16px }
