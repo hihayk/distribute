@@ -1,4 +1,8 @@
-.dst { display: flex }
+.dst { 
+  display: flex;
+  align-items: flex-start;
+}
+
 .dst-inline { display: inline-flex }
 .dst-vertical { flex-direction: column }
 .dst-start { align-items: flex-start }
